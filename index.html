@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+
+<body>
+    <section class="table">
+        <div class="container">
+            <button class="btn__open">Add</button>
+            <div class="table__wrapper">
+                <table class="table__content">
+                    <thead>
+                        <tr>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Username</th>
+                            <th>IELTS Score</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+    <div class="popap">
+        <div class="overlay"></div>
+        <form class="model" action="">
+            <input required type="text" class="model__Firstname" placeholder="Firstname">
+            <input required type="text" class="model__Lastname" placeholder="Lastname">
+            <input required type="text" class="model__Username" placeholder="Username">
+            <select class="model__score" title="Score">
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+                <option value="3">3</option>
+                <option value="3.5">3.5</option>
+                <option value="4">4</option>
+                <option value="4.5">4.5</option>
+                <option value="5">5</option>
+                <option value="5.5">5.5</option>
+                <option value="6">6</option>
+                <option value="6.5">6.5</option>
+                <option value="7">7</option>
+                <option value="7.5">7.5</option>
+                <option value="8">8</option>
+                <option value="8.5">8.5</option>
+                <option value="9">9</option>
+            </select>
+
+            <button class="btn__submit" type="submit">Register</button>
+            <button type="button" class="btn__close">Cancel</button>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+        </form>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

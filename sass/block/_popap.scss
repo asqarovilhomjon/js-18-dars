@@ -1,0 +1,100 @@
+.btn__close {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    color: white;
+    background: #010101;
+    transition: .3s;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #302c2c;
+    }
+}
+
+.popap {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    background: #0004;
+    z-index: 100;
+    opacity: 0;
+    animation: overlay .5s ease 0s forwards;
+
+}
+
+@keyframes overlay {
+    to {
+        opacity: 1;
+    }
+}
+
+.model {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%) scale(.8);
+    width: 350px;
+    min-height: 400px;
+    background: #ffffff;
+    z-index: 101;
+    box-shadow: 0 0 25px #0005;
+    opacity: 0;
+    animation: model .5s ease 0s forwards;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgb(201, 201, 201);
+
+    b {
+        color: rgb(193, 193, 237);
+    }
+
+    input,
+    select {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid rgb(152, 151, 151);
+        padding-left: 10px;
+        outline: none;
+        color: rgb(83, 83, 84);
+    }
+
+    .btn__submit {
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid gainsboro;
+        color: white;
+        background: #010101;
+        transition: .3s;
+        font-weight: 700;
+        margin-top: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #302c2c;
+        }
+    }
+}
+
+@keyframes model {
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
